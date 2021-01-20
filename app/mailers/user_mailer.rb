@@ -8,6 +8,6 @@ class UserMailer < ApplicationMailer
     @greeting = "Hi"
     @user = user
 
-    mail to: "to@example.org"
+    mail to: @user.email
   end
 end
